@@ -1,0 +1,366 @@
+@media(max-width: 600px) {
+    .cabecalho {
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100vw;
+    }
+
+    .cabecalho .logo {
+        width: 40px;
+    }
+
+    .cabecalho .navegacao .menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0;
+        background-color: aliceblue;
+        height: 0px;
+        transition: .9s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .cabecalho .navegacao.active .menu {
+        height: 280px;
+        visibility: visible;
+        overflow-y: auto;
+        padding: 6px;
+    }
+
+    .cabecalho .navegacao .menu .item a {
+        text-align: center;
+        display: block;
+        padding: 2px 0;
+        margin: 0 16px;
+        border-bottom: 2px solid black;
+        color: black;
+    }
+
+    .cabecalho .navegacao .menu .item a:visited {
+        color: black;
+        font-size: calc(0.6em + 1vw);
+    }
+
+    .cabecalho .navegacao .btn-mobile {
+        display: flex;
+        padding: 8px 16px;
+        font-size: 16px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .cabecalho .btn-mobile .hamburger {
+        color: #91B3FA;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .4s;
+        position: relative;
+    }
+
+    .navegacao.active .btn-mobile .hamburger {
+        border-top-color: transparent;
+    }
+
+    .navegacao.active .btn-mobile .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+
+    .navegacao.active .btn-mobile .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .cabecalho .menu .item a {
+        font-size: calc(0.6em + 1vw);
+    }
+
+    .conteudo-principal .paineis {
+        height: 400px;
+    }
+
+    .conteudo-principal .paineis .titulos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo-principal .paineis .titulo {
+        font-size: 17px;
+        margin-bottom: 8px;
+        font-size: 30px;
+    }
+
+    .conteudo-principal .paineis .subtitulo {
+        font-size: 20px;
+
+    }
+
+    .conteudo-principal .paineis .seta {
+        width: 14px;
+    }
+
+    .quem-somos .conteudo {
+        flex-direction: column;
+        text-align: center;
+        padding: 90px 45px;
+    }
+
+    .quem-somos .conteudo .imagem {
+        display: none;
+    }
+
+    .quem-somos .conteudo .informacoes {
+        width: 100%;
+    }
+
+    .quem-somos .conteudo .informacoes .titulo {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .estacao-meteorologica .conteudo {
+        flex-direction: column;
+        text-align: center;
+        padding: 90px 45px;
+    }
+
+    .estacao-meteorologica .conteudo .imagem {
+        display: none;
+    }
+
+    .estacao-meteorologica .conteudo .informacoes {
+        width: 100%;
+    }
+
+    .estacao-meteorologica .conteudo .informacoes .titulo {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .pluviometro .conteudo {
+        flex-direction: column;
+        text-align: center;
+        padding: 90px 45px;
+    }
+
+    .pluviometro .conteudo .imagem {
+        display: none;
+    }
+
+    .pluviometro .conteudo .informacoes {
+        width: 100%;
+    }
+
+    .pluviometro .conteudo .informacoes .titulo {
+        text-align: center;
+        font-size: 50px;
+    }
+
+
+    .objetivo .conteudo {
+        flex-direction: column;
+        text-align: center;
+        padding: 90px 45px;
+    }
+
+    .objetivo .conteudo .imagem {
+        display: none;
+    }
+
+    .objetivo .conteudo .informacoes {
+        width: 100%;
+    }
+
+    .objetivo .conteudo .informacoes .titulo {
+        text-align: center;
+        font-size: 50px;
+
+    }
+
+    .feedbacks .cards-feedbacks {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .feedbacks .titulo-feedbacks {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .contato .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato .conteudo .map {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .contato .conteudo .conteiner-form {
+        width: 96vw;
+    }
+
+    .rodape .navegacao {
+        justify-content: center;
+    }
+
+    .rodape .navegacao .logo {
+        margin-bottom: 30px;
+    }
+
+    .rodape .navegacao .logo,
+    .rodape .navegacao .redes-sociais {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media(min-width: 480px) and (max-width: 1030px) {
+
+    .cabecalho {
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100vw;
+    }
+
+    .cabecalho .logo {
+        width: 40px;
+    }
+
+    .cabecalho .navegacao .menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0;
+        background-color: aliceblue;
+        height: 0px;
+        transition: .9s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .cabecalho .navegacao.active .menu {
+        height: 280px;
+        visibility: visible;
+        overflow-y: auto;
+        padding: 6px;
+    }
+
+    .cabecalho .navegacao .menu .item a {
+        text-align: center;
+        display: block;
+        padding: 2px 0;
+        margin: 0 16px;
+        border-bottom: 2px solid black;
+        color: black;
+    }
+
+    .cabecalho .navegacao .menu .item a:visited {
+        color: black;
+        font-size: calc(0.6em + 1vw);
+    }
+
+    .cabecalho .navegacao .btn-mobile {
+        display: flex;
+        padding: 8px 16px;
+        font-size: 16px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .cabecalho .btn-mobile .hamburger {
+        color: #91B3FA;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .4s;
+        position: relative;
+    }
+
+    .navegacao.active .btn-mobile .hamburger {
+        border-top-color: transparent;
+    }
+
+    .navegacao.active .btn-mobile .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+
+    .navegacao.active .btn-mobile .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .quem-somos .conteudo .informacoes .titulo {
+        margin-bottom: 5px;
+        font-size: 40px;
+    }
+
+    .quem-somos .conteudo .informacoes .texto {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .quem-somos .conteudo .imagem {
+        width: 50%;
+    }
+
+    .objetivo .conteudo .informacoes .titulo {
+        margin-top: 15px;
+    }
+
+    .objetivo .conteudo .informacoes .texto {
+        margin-top: 2px;
+        margin-bottom: 15px;
+    }
+
+    .feedbacks .cards-feedbacks {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contato .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato .conteudo .map {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .contato .conteudo .conteiner-form {
+        width: 96vw;
+    }
+}

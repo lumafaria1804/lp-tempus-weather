@@ -1,0 +1,510 @@
+/* CABECALHO */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    width: 100vw;
+    margin: 0;
+    flex-wrap: wrap;
+    background-color: #1a3652;
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo .imagem {
+    width: 100px;
+}
+
+.logo .nome {
+    margin-left: 7px;
+    font-size: 17px;
+    transition: 0.4s ease-in-out;
+    font-weight: 800;
+    color: white;
+}
+
+.logo .nome:hover {
+    color: #91B3FA;
+}
+
+.cabecalho .navegacao .btn-mobile {
+    display: none;
+}
+
+.cabecalho .navegacao .menu {
+    display: flex;
+}
+
+.cabecalho .navegacao .menu .item {
+    margin: 10px;
+}
+
+.cabecalho .navegacao .menu .item a {
+    color: white;
+    padding: 15px;
+}
+
+.cabecalho .navegacao .menu .item a:hover {
+    border: 2px solid #91B3FA;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/* CABECALHO */
+
+/* PAINEIS */
+
+.conteudo-principal .paineis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    position: relative;
+}
+
+.conteudo-principal .paineis .imagem-painel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(35%);
+    opacity: 0;
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar {
+    opacity: 1;
+}
+
+.conteudo-principal .paineis .projeto1 {
+    background-image: url("../img/Designer.jpeg");
+}
+
+.conteudo-principal .paineis .projeto2 {
+    background-image: url("../img/painel2.jpeg");
+}
+
+.conteudo-principal .paineis .projeto3 {
+    background-image: url("../img/painel3.jpeg");
+}
+
+.conteudo-principal .paineis .titulo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(1.6em + 1vw);
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.conteudo-principal .paineis .subtitulo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+}
+
+
+.conteudo-principal .paineis .seta {
+    background-image: url("../img/seta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar {
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar {
+    right: 20px;
+}
+
+/* PAINEIS */
+
+/* QUEM SOMOS */
+
+.quem-somos {
+    background-color: #245483;
+}
+
+.quem-somos .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 2% 10%;
+    gap: 50px;
+
+}
+
+.quem-somos .conteudo .informacoes {
+    width: 40%;
+}
+
+.quem-somos .conteudo .imagem {
+    width: 60%;
+}
+
+.quem-somos .conteudo .informacoes .titulo {
+    font-size: 50px;
+    color: #a2c8eb;
+    margin-bottom: 50px;
+    padding-bottom: 8px;
+}
+
+.quem-somos .conteudo .informacoes .texto {
+    font-size: 18px;
+    line-height: 1.4;
+    color: white;
+    font-weight: 400px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* QUEM SOMOS */
+
+/*ESTAÇÃO METEOROLÓGICA */
+
+.estacao-meteorologica {
+    background-color: #9cd2f3;
+}
+
+.estacao-meteorologica .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 4% 10%;
+    gap: 80px;
+}
+
+.estacao-meteorologica .conteudo .informacoes {
+    width: 60%;
+}
+
+.estacao-meteorologica .conteudo .imagem {
+    width: 30%;
+}
+
+.estacao-meteorologica .conteudo .informacoes .titulo {
+    font-size: 50px;
+    color: #12283B;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+
+.estacao-meteorologica .conteudo .informacoes .subtitulo {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #12283B;
+    font-weight: 400px;
+
+}
+
+.estacao-meteorologica .conteudo .informacoes .texto {
+    font-size: 17px;
+    line-height: 1.4;
+    color: black;
+    font-weight: 400px;
+    text-align: justify;
+}
+
+/* ESTAÇÃO METEOROLÓGICA */
+
+/* OBJETIVO */
+
+.objetivo {
+    background-color: #9cd2f3;
+}
+
+.objetivo .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 1% 10%;
+    gap: 50px;
+}
+
+.objetivo .conteudo .informacoes {
+    width: 60%;
+}
+
+.objetivo .conteudo .imagem {
+    width: 40%;
+}
+
+.objetivo .conteudo .informacoes .titulo {
+    font-size: 50px;
+    color: #12283B;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+
+.objetivo .conteudo .informacoes .texto {
+    font-size: 19px;
+    line-height: 1.4;
+    color: black;
+    font-weight: 400px;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+/* OBJETIVO */
+
+/* DESCRIÇÃO */
+
+.pluviometro {
+    background-color: #245483;
+}
+
+.pluviometro .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 8% 10%;
+    gap: 70px;
+}
+
+.pluviometro .conteudo .informacoes {
+    width: 60%;
+}
+
+.pluviometro .conteudo .imagem {
+    width: 40%;
+}
+
+.pluviometro .conteudo .informacoes .titulo {
+    font-size: 50px;
+    color: #a2c8eb;
+    margin-bottom: 40px;
+    padding-bottom: 8px;
+}
+
+.pluviometro .conteudo .informacoes .subtitulo {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #a2c8eb;
+    font-weight: 400px;
+}
+
+.pluviometro .conteudo .informacoes .texto {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #f1f1f1;
+    font-weight: 400px;
+    text-align: justify;
+}
+
+/* DESCRIÇÃO */
+
+/* FEEDBACK */
+
+.feedbacks {
+    background-color: #245483;
+}
+
+.feedbacks .titulo-feedbacks {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+    color: #a2c8eb;
+    padding-bottom: 8px;
+}
+
+.feedbacks .cards-feedbacks {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 150px 200px 150px;
+}
+
+.feedbacks .cards-feedbacks .card-feedback {
+    width: 350px;
+    height: 550px;
+    background-color: #E6E6E6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.feedbacks .cards-feedbacks .card-feedback .topo-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.feedbacks .cards-feedbacks .card-feedback .img-cliente {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.feedbacks .cards-feedbacks .texto-cliente {
+    color: black;
+    font-size: 17px;
+    height: 250px;
+    width: 300px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* FEEDBACK */
+
+/* CONTATO */
+
+.contato {
+    background-color: #9CD2F3;
+
+}
+
+.contato .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+}
+
+.contato .conteudo .map {
+    width: 50%;
+    height: 458px;
+
+}
+
+.contato .conteudo .map iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+.contato .conteudo .conteiner-form {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 14px;
+    margin: 14px;
+    /* box-sizing: 0 3px 5px  black; */
+    overflow: hidden;
+}
+
+.contato .conteiner-form .titulo {
+    background: linear-gradient(120deg, #245483 0%, #1a3652 100%);
+    padding: 24px;
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.contato .conteudo .form {
+    padding: 18px;
+}
+
+.contato .conteudo .campo-form {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.contato .conteudo .campo-form label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.contato .conteudo .campo-form input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #12283B;
+}
+
+.contato .conteudo .campo-form a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.contato .conteudo .form button {
+    background: linear-gradient(120deg, #245483 0%, #1a3652 100%);
+    color: #f1f1f1;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.contato .conteudo .campo-form.error input {
+    border-color: rgb(229, 11, 11);
+}
+
+.contato .conteudo .campo-form.error a {
+    color: rgb(229, 11, 11);
+    visibility: visible;
+}
+
+/* CONTATO */
+
+/* RODAPE */
+
+.rodape {
+    padding: 80px 0 20px 0;
+    background-color: #1A3652;
+}
+
+.rodape .navegacao {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape .redes-sociais {
+    display: flex;
+}
+
+.rodape .redes-sociais a {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 15px;
+    width: 65px;
+    transition: 0.4s ease-in-out;
+    background-color: white;
+    border: 2px solid #3c56a4;
+}
+
+.rodape .redes-sociais a:hover {
+    background-color: #91B3FA;
+}
+
+.rodape .copyright {
+    margin-top: 70px;
+    text-align: center;
+    color: #91B3FA;
+    font-size: 20px;
+}
+
+/* RODAPE */
